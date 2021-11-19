@@ -20,7 +20,7 @@ limitations under the License.
 
 # Data Types
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > List of strided array data types.
 
@@ -58,11 +58,14 @@ Returns a list of strided array data types.
 
 ```javascript
 var out = dtypes();
-// returns [ 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8' ]
+// returns [ 'binary', 'complex64', 'complex128', 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
 ```
 
 The output `array` contains the following data types:
 
+-   `binary`: binary.
+-   `complex64`: single-precision complex floating-point numbers.
+-   `complex128`: double-precision complex floating-point numbers.
 -   `float32`: single-precision floating-point numbers.
 -   `float64`: double-precision floating-point numbers.
 -   `generic`: values of any type.
@@ -72,6 +75,7 @@ The output `array` contains the following data types:
 -   `uint16`: unsigned 16-bit integers.
 -   `uint32`: unsigned 32-bit integers.
 -   `uint8`: unsigned 8-bit integers.
+-   `uint8c`: unsigned clamped 8-bit integers.
 
 </section>
 
@@ -182,8 +186,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/strided-dtypes/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/strided-dtypes?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/strided-dtypes.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/strided-dtypes/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
