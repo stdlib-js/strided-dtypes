@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dtypes@deno/mod.js';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dtypes@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { enum } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dtypes@deno/mod.js';
+import { enum } from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dtypes@v0.2.0-deno/mod.js';
 ```
 
 #### dtypes()
@@ -108,7 +108,7 @@ The output `array` contains the following data types:
 
 ```javascript
 import indexOf from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-index-of@deno/mod.js';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dtypes@deno/mod.js';
+import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dtypes@v0.2.0-deno/mod.js';
 
 var DTYPES = dtypes();
 var bool;
