@@ -2,7 +2,7 @@
 
 @license Apache-2.0
 
-Copyright (c) 2020 The Stdlib Authors.
+Copyright (c) 2024 The Stdlib Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/strided-dtypes
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-dtypes = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-dtypes@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var dtypes = require( 'path/to/vendor/umd/strided-dtypes/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/strided-dtypes@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.dtypes;
-})();
-</script>
+var dtypes = require( '@stdlib/strided-dtypes' );
 ```
 
 #### dtypes()
@@ -85,12 +79,13 @@ Returns a list of strided array data types.
 
 ```javascript
 var out = dtypes();
-// returns [ 'binary', 'complex64', 'complex128', 'float32', 'float64', 'generic', 'int16', 'int32', 'int8', 'uint16', 'uint32', 'uint8', 'uint8c' ]
+// e.g., returns [ 'binary', 'bool', 'complex64', ... ]
 ```
 
-The output `array` contains the following data types:
+The output array contains the following data types:
 
 -   `binary`: binary.
+-   `bool`: boolean values.
 -   `complex64`: single-precision complex floating-point numbers.
 -   `complex128`: double-precision complex floating-point numbers.
 -   `float32`: single-precision floating-point numbers.
@@ -124,23 +119,13 @@ The output `array` contains the following data types:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-index-of@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/strided-dtypes@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var contains = require( '@stdlib/array-base-assert-contains' ).factory;
+var dtypes = require( '@stdlib/strided-dtypes' );
 
-var DTYPES = dtypes();
-var bool;
+var isdtype = contains( dtypes() );
 
-function isdtype( str ) {
-    return ( indexOf( DTYPES, str ) >= 0 );
-}
-
-bool = isdtype( 'float64' );
+var bool = isdtype( 'float64' );
 // returns true
 
 bool = isdtype( 'int16' );
@@ -151,11 +136,6 @@ bool = isdtype( 'uint8' );
 
 bool = isdtype( 'beep' );
 // returns false
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
