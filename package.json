@@ -38,14 +38,14 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-dtypes": "^0.2.1",
+    "@stdlib/ndarray-dtypes": "^0.3.0",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
     "@stdlib/utils-define-read-only-property": "^0.2.2",
     "@stdlib/utils-keys": "^0.2.2",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/array-base-assert-contains": "^0.2.1",
+    "@stdlib/array-base-assert-contains": "^0.2.2",
     "@stdlib/assert-has-own-property": "^0.2.2",
     "@stdlib/assert-is-nonnegative-integer": "^0.2.2",
     "@stdlib/assert-is-string-array": "^0.2.2",
