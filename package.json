@@ -38,6 +38,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/ndarray-base-dtype-enums": "github:stdlib-js/ndarray-base-dtype-enums#main",
     "@stdlib/ndarray-dtypes": "^0.3.0",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
     "@stdlib/utils-define-read-only-property": "^0.2.2",
