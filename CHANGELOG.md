@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-21)
+## Unreleased (2026-01-30)
 
 <section class="issues">
 
@@ -25,7 +25,7 @@ This release closes the following issue:
 <details>
 
 -   [`654413c`](https://github.com/stdlib-js/stdlib/commit/654413c9b3d6c451eec0c6763a49e574212bd365) - **refactor:** update require path _(by Athan Reines)_
--   [`53c6429`](https://github.com/stdlib-js/stdlib/commit/53c6429aee35e48e178bc96072a39d1d9db325f3) - **chore:** fix EditorConfig lint errors [(#7737)](https://github.com/stdlib-js/stdlib/pull/7737) _(by AryanJ18, Athan Reines)_
+-   [`53c6429`](https://github.com/stdlib-js/stdlib/commit/53c6429aee35e48e178bc96072a39d1d9db325f3) - **chore:** fix EditorConfig lint errors [(#7737)](https://github.com/stdlib-js/stdlib/pull/7737) _(by Aryan J, Athan Reines)_
 
 </details>
 
@@ -39,7 +39,7 @@ This release closes the following issue:
 
 A total of 2 people contributed to this release. Thank you to the following contributors:
 
--   AryanJ18
+-   Aryan J
 -   Athan Reines
 
 </section>
